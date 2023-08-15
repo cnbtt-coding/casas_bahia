@@ -1,0 +1,334 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header style */
+
+header {
+    background-color: whitesmoke;
+}
+
+header .container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .title {
+    display: flex;
+    align-items: center;
+}
+
+header .container .title h1 {
+    display: flex;
+}
+
+header .container .title img {
+    height: 100px;
+    padding: 8px;
+    background-color: rgba(0, 25, 253, 0.733);
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+header .container .title img:hover {
+    scale: 1.03;
+    transition: all .55s ease;
+    cursor: pointer;
+}
+
+header .container .title #casas {
+    color: blue;
+    font-size: 30px;
+}
+
+header .container .title #bahia {
+    color: red;
+    font-size: 27px;
+    font-family: sans-serif;
+}
+
+header .container .center {
+    display: flex;
+    align-items: center;
+}
+
+header .container .center button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+header .container .center button img {
+    height: 35px;
+    margin-top: 4px;
+}
+
+header .container form input {
+    width: 400px;
+    height: 35px;
+    margin-right: 64px;
+    margin-left: 8px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+header .container .login {
+    display: flex;
+    align-items: center;
+}
+
+header .container .login img {
+    height: 30px;
+    margin-right: 12px;
+}
+
+
+header .container .login li {
+    display: inline;
+    margin-left: 4px;
+}
+
+header .container .login li a {
+    text-decoration: none;
+    color: blue;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+header .container .login li a:hover {
+    border-bottom: 1px solid rgb(0, 0, 141);
+}
+
+/* departments */
+
+#departments .container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    justify-content: space-between;
+    box-shadow: 5px 0px 5px black;
+    border-bottom: 5px solid red;
+}
+
+#departments .container .buttons {
+    display: flex;
+}
+
+#departments .container button{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(56, 56, 221);
+    color: white;
+    border: none;
+    border-right: 1px solid gray;
+    box-shadow: 0px 0px 2px white;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+#departments .container button:hover {
+    background-color: rgba(56, 56, 221, 0.877);
+}
+
+/* departments ballons */
+
+#departments .container .baloes {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+#departments .container .baloes ul {
+    max-width: 213.3px;
+    width: 100%;
+    display: none;
+}
+
+#departments .container .baloes li {
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    height: 30px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+#departments .container .baloes li:hover {
+    background-color: rgba(255, 0, 0, 0.548);
+    transition: all .30s ease;
+}
+
+#departments .container .baloes li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Ballons config */
+
+#departments .container .baloes
+#telefonia,
+#eletrodom,
+#tv,
+#moveis,
+#eletropor,
+#ti,
+#services {
+    position: relative;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+#departments .container .baloes
+#telefonia::after,
+#eletrodom::after,
+#tv::after,
+#moveis::after,
+#eletropor::after,
+#ti::after,
+#services::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #fff;
+    top: -20px; 
+    left: 12%;
+    z-index: 2;
+}
+
+/*carousel*/ 
+
+#carousel-images {
+    border-bottom: 5px solid red;
+}
+
+/* Main - suggestion */
+
+#suggestion .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 24px auto;
+    display: block;
+}
+
+#suggestion .container h1 {
+    font-family: sans-serif;
+    color: blue;
+    font-size: 30px;
+    margin-bottom: 48px;
+}
+
+#suggestion .container .products {
+    display: flex;
+    justify-content: space-between;
+}
+
+#suggestion .container .products article {
+    max-width: 300px;
+    width: 100%;
+    padding: 8px;
+    border-right: 1px solid rgba(128, 128, 128, 0.137);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#suggestion .container .products article:hover {
+    box-shadow: 0px 0px 5px black;
+    transition: all .55s ease;
+    scale: 0.98;
+}
+
+#suggestion .container .products article .foto-anuncio {
+    height: 170px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+#suggestion .container .products article .title {
+    margin-bottom: 18px;
+    color: rgba(0, 0, 0, 0.808);
+}
+
+#suggestion .container .products article .title:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+#suggestion .container .products article .old-price {
+    text-decoration: line-through;
+    font-weight: 600;
+    color: #000000d0;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+#suggestion .container .products article .price {
+    font-size: 22px;
+    font-family: sans-serif;
+    color: blue;
+    font-weight: 600;
+}
+
+#suggestion .container .products article .parcelamento {
+    font-size: 15px;
+    color: rgba(0, 0, 255, 0.856);
+}
+
+/* Estilização dos cards */
+
+.caixas {
+    display: block;
+    margin-top: 64px;
+}
+
+.caixas .container {
+    max-width: 900px;
+    width: 100%;
+}
+.caixas img {
+    height: 400px;
+    margin-right: 8px;
+}
+
+.caixas img:hover {
+    scale: 1.01;
+    transition: all .60s ease;
+    cursor: pointer;
+}
+
+.caixas .tres-caixas {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.caixas .duas-caixas {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
